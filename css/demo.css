@@ -76,26 +76,38 @@ a:hover, a:focus {
 	right: 50px;
 	overflow: hidden;
     background: #eef468;
-    animation: animate 2s  cubic-bezier(1, 0.1, 0.1, 1);
-    -webkit-animation: animate 2s cubic-bezier(1, 0.1, 0.1, 1);
-    -moz-animation: animate 2s cubic-bezier(1, 0.1, 0.1, 1);
+    animation: animate 2s  cubic-bezier(1, 0.2, 0.2, 1);
+    -webkit-animation: animate 2s cubic-bezier(1, 0.2, 0.2, 1);
+    -moz-animation: animate 2s cubic-bezier(1, 0.2, 0.2, 1);
 }
 
 @keyframes animate{
     0%{
-        transform: matrix(0.2, 1, 1, 0.2, 0.2, 0.2);
+        transform: matrix(1, 0, 0, 1, 1, 1);  
+        -webkit-transform: matrix(1, 0, 0, 1, 1, 1);  
+    }
+    50%{
+        transform: matrix(0, 0.001, 0.001, 0, 0.5, 0.5);
+        -webkit-transform: matrix(0, 0.001, 0.001, 0, 0.5, 0.5);
     }
     100%{
-        transform: matrix(1, 0, 0.2, 1, 1, 1);  
+        transform: matrix(1, 0, 0, 1, 1, 1);  
+        -webkit-transform: matrix(1, 0, 0, 1, 1, 1);  
     }
 }
 
 @-webkit-keyframes animate{
     0%{
-        transform: matrix(0.2, 1, 1, 0.2, 0.2, 0.2);
+        transform: matrix(1, 0, 0, 1, 1, 1);  
+        -webkit-transform: matrix(1, 0, 0, 1, 1, 1);  
+    }
+    50%{
+        transform: matrix(0, 0.001, 0.001, 0, 0.5, 0.5);
+        -webkit-transform: matrix(0, 0.001, 0.001, 0, 0.5, 0.5);
     }
     100%{
         transform: matrix(1, 0, 0, 1, 1, 1);  
+        -webkit-transform: matrix(1, 0, 0, 1, 1, 1);  
     }
 }
 
